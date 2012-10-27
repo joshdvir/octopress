@@ -1,11 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://blog.tooveo.com/2012/10/27/how-to-create-your-own-private-gem-server-with-geminabox/
+        </loc>
+        <lastmod>2012-10-27T23:16:11+03:00</lastmod>
+    </url>
+    <url>
         <loc>http://blog.tooveo.com/blog/archives/</loc>
-        <lastmod>2012-09-08T21:09:12+03:00</lastmod>
+        <lastmod>2012-10-27T23:16:11+03:00</lastmod>
     </url>
     <url>
         <loc>http://blog.tooveo.com/</loc>
-        <lastmod>2012-09-08T21:09:12+03:00</lastmod>
+        <lastmod>2012-10-27T23:16:11+03:00</lastmod>
     </url>
 </urlset>

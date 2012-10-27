@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tooveo Blog]]></title>
-  <link href="http://blog.tooveo.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Gem Server | Tooveo Blog]]></title>
+  <link href="http://blog.tooveo.com/blog/categories/gem-server/atom.xml" rel="self"/>
   <link href="http://blog.tooveo.com/"/>
   <updated>2012-10-27T23:16:16+03:00</updated>
   <id>http://blog.tooveo.com/</id>
@@ -27,22 +27,21 @@
 <h2>Installation</h2>
 
 <ol>
-<li><p>Create a new domain/subdomain in <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a> control panel for the gem server make sure that you checked the Passenger (Ruby/Python apps only) option. You must also specify the location of the &#8216;public&#8217; subdirectory of the Ruby on Rails (or other Rack-compliant) application at the same time which is just public.</p></li>
+<li><p>Create a new domain/subdomain in <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a> control panel for the gem server make sure that you checked the Passenger (Ruby/Python apps only) option. You must also specify the location of the 'public' subdirectory of the Ruby on Rails (or other Rack-compliant) application at the same time which is just public.</p></li>
 <li><p>SSH to your server and cd to the folder of the domain/subdomain.</p></li>
 <li><p>Clone this repo locally or directly to your <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a> domain/subdomain you wish to have the gem server.</p></li>
 </ol>
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/shukydvir/geminabox-dreamhost.git</span></code></pre></td></tr></table></div></figure>
-
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/shukydvir/geminabox-dreamhost.git</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ol>
-<li>Update the config.ru file with your username and password for the basic authentication or comment these lines if you don&#8217;t wise no authentication at all.</li>
+<li>Update the config.ru file with your username and password for the basic authentication or comment these lines if you don't wise no authentication at all.</li>
 </ol>
 
 
-<figure class='code'><figcaption><span>simple Rack::Auth::Basic block  </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>simple Rack::Auth::Basic block  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -51,25 +50,22 @@
 </span><span class='line'>  <span class="n">username</span> <span class="o">=</span> <span class="s2">&quot;username&quot;</span>
 </span><span class='line'>  <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
 </span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ol>
-<li><p>if you have cloned localy you need to upload the files to the server (choose which method you want rsync, scp, etc&#8230;)</p></li>
+<li><p>if you have cloned localy you need to upload the files to the server (choose which method you want rsync, scp, etc...)</p></li>
 <li><p>run bundle install on the server.</p></li>
 </ol>
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
+<p>if that don't work you need to export the path of the gems on your server should be like this:</p>
 
-<p>if that don&#8217;t work you need to export the path of the gems on your server should be like this:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>~/.gems/bin:/usr/lib/ruby/gems/1.8/bin:<span class="nv">$PATH</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>and then run bundle install.</p>
 
@@ -78,11 +74,10 @@
 </ol>
 
 
-<figure class='code'><figcaption><span>Bash  </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Bash  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>touch tmp/restart.txt
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>will get the job done.</p>
 
@@ -90,27 +85,24 @@
 
 <p>if you did other changes in the code you need to restart the passenger by doing</p>
 
-<figure class='code'><figcaption><span>Bash  </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Bash  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>touch tmp/restart.txt
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>in order to use this just add this to your Gemfile</p>
 
-<figure class='code'><figcaption><span>GemFile  </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>GemFile  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">source</span> <span class="s2">&quot;http://your.servers.host&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>or if you setup the basic auth use this</p>
 
-<figure class='code'><figcaption><span>Gemfile  </span></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Gemfile  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">source</span> <span class="s2">&quot;http://username:password@your.servers.host&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>and you can access your private gems hosted on your own private gem server on <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a>.</p>
 
@@ -129,11 +121,11 @@
 
 <p>you can user the <a href="https://github.com/rubygems/rubygems-mirror">rubygems-mirror gem</a> to do this easily.</p>
 
-<p>I&#8217;ll explain how I did that next post so stay tune&#8230;</p>
+<p>I'll explain how I did that next post so stay tune...</p>
 
 <h2>Signup for <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a> account.</h2>
 
-<p>if you don&#8217;t have a <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a> shared hosting account you can create one using the Promo Code below:</p>
+<p>if you don't have a <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a> shared hosting account you can create one using the Promo Code below:</p>
 
 <ol>
 <li>$30 discount if you pay for 1 year.</li>
@@ -143,7 +135,7 @@
 
 <p><strong>Enjoy</strong></p>
 
-<h3>Promo Code: &#8220;SHUKYDVIR&#8221;</h3>
+<h3>Promo Code: "SHUKYDVIR"</h3>
 ]]></content>
   </entry>
   
