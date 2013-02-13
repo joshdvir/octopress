@@ -12,6 +12,8 @@ Check out the repo @ <https://github.com/shukydvir/geminabox-dreamhost>
 
 How to run Gem In A Box on [Dreamhost](http://www.dreamhost.com/r.cgi?239314) shared hosting.
 
+<!-- more -->
+
 ## Installation
 
 1. Create a new domain/subdomain in [Dreamhost](http://www.dreamhost.com/r.cgi?239314) control panel for the gem server make sure that you checked the Passenger (Ruby/Python apps only) option. You must also specify the location of the 'public' subdirectory of the Ruby on Rails (or other Rack-compliant) application at the same time which is just public.
