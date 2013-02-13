@@ -3,4 +3,4 @@
 	url = git://github.com/tommy351/Octopress-Theme-Slash.git
 [submodule ".themes/foxslide"]
 	path = .themes/foxslide
-	url = git@github.com:shukydvir/foxslide.git
+	url = git://github.com/shukydvir/foxslide.git
