@@ -1,10 +1,19 @@
-<p class="pull-left">
-  <a href="{{ root_url }}/">{{ site.title }}</a>
-  - Copyright &copy; {{ site.time | date: "%Y" }} - {{ site.author }}
-</p>
-<p class="pull-right">
-  <span>Powered by <a href="http://octopress.org/">Octopress</a>.</span>
-  {% unless site.hide_design_credits %}
-    <span>Designed by <a href="http://www.AdrianArtiles.com">Adrian Artiles</a>.</span>
-  {% endunless %}
-</p>
+<nav id="pagenavi">
+  <div class="center">
+    <a href="http://tooveo.com">Tooveo</a> &nbsp; | &nbsp;
+    <a href="http://tooveo.com/about">About Us</a> &nbsp; | &nbsp;
+    <a href="http://tooveo.com/api">API</a> &nbsp; | &nbsp;
+    <a href="http://tooveo.com/privacy">Privacy</a> &nbsp; | &nbsp;
+    <a href="mailto:support@tooveo.com">Contact</a> &nbsp; | &nbsp;
+    <a href="{{ site.subscribe_rss }}">RSS Feed</a> &nbsp; | &nbsp;
+    <a href="{{ root_url }}/blog/archives">Archives</a>
+    <br/><br/><br/>
+    Copyright &copy; {{ site.time | date: "%Y" }}
+    {% if site.author %}
+        {{ site.author }}
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+  </div>
+</nav>
+<br/><br/>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Gem Server | Shuky Dvir]]></title>
+  <title><![CDATA[Category: Gem Server | Tooveo Blog]]></title>
   <link href="http://blog.tooveo.com/blog/categories/gem-server/atom.xml" rel="self"/>
   <link href="http://blog.tooveo.com/"/>
-  <updated>2013-02-14T00:14:16+02:00</updated>
+  <updated>2013-04-02T23:07:17+03:00</updated>
   <id>http://blog.tooveo.com/</id>
   <author>
-    <name><![CDATA[Shuky Dvir]]></name>
-    <email><![CDATA[shuky@shuky.co.il]]></email>
+    <name><![CDATA[Tooveo]]></name>
+    <email><![CDATA[info@tooveo.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[How to create your own private gem server with geminabox]]></title>
     <link href="http://blog.tooveo.com/2012/10/27/how-to-create-your-own-private-gem-server-with-geminabox/"/>
-    <updated>2012-10-27T22:13:00+03:00</updated>
+    <updated>2012-10-27T22:13:00+02:00</updated>
     <id>http://blog.tooveo.com/2012/10/27/how-to-create-your-own-private-gem-server-with-geminabox</id>
     <content type="html"><![CDATA[<h1>Gem In A Box on <a href="http://www.dreamhost.com/r.cgi?239314">Dreamhost</a></h1>
 
